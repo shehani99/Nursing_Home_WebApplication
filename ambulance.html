@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ambulance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+           font-family: sans-serif;
+            font-size: 12px;
+            margin: 0px auto;
+            padding:0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+#nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: DarkCyan;
+           
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding-top: 3px;
+            text-decoration: none;
+            width: 188px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 85%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: gray;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 500px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: DarkCyan;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 70%; 
+   border-style: solid;
+  border-color: #20B2AA;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  top: 250px;
+  left: 10px;
+  width: 200vh;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border-radius: 50px;
+  
+}
+
+.img2 { background-image: url('IMG_2949_d1000.jpg'); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color:	floralwhite;
+  font-weight: bold;
+  font-size: 40px;
+  border: 10px solid DarkCyan;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 900px;
+  height:200px;
+  padding: 20px ;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  color: 	dimgrey;
+}
+.center1 {
+  text-align: center;
+  color: 	black;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: PowderBlue;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  white;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  white;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+		
+.blockquote {
+width: 80%;
+margin: 60px auto;
+padding: 6px;
+font-size: 18px;
+box-shadow:  inset 12px 4px 24px 4px #20B2AA, 4px 4px 10px 3px #20B2AA;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+
+
+
+
+#gallery img {
+   width: auto;
+   height: 160px !important;
+   margin-right: 4px;
+   margin-bottom:5px;
+}
+
+
+#gallery img:hover {
+   filter: grayscale(60%);
+}
+
+
+ 
+
+h1 {
+  font-size: 30px;
+  
+}
+
+h2 {
+  font-size: 20px;
+  color: gray;
+  font-size: 20px;
+  padding: 8px;  
+  margin-top:5px;  
+  margin-bottom:5px;  
+  margin-left: 20px;  
+  margin-right: 20px;
+
+}
+
+p {
+  font-size: 16px;
+  padding-top: 2px;  
+  margin-top:5px;  
+  margin-bottom:5px;  
+  margin-left:20px;  
+  margin-right:20px;
+  font-color: black;
+  font-size:18px;   
+}
+
+h3{
+
+font-size: 20px;
+color: #4682b4;
+ 
+}
+
+     
+
+
+table, th, td {
+  border: 0px solid;
+}
+
+table {
+  width: 50px;
+ 
+}
+
+
+
+         
+          
+</style>
+</head>
+<body>
+
+<center>
+<img  src ="images.png" alt="Trulli" style="width:10%"><img  src ="21765282_214818732387609_7698533422210261908_n.jpg" alt="Trulli" style="width:20%"></center>
+<br><br>
+
+<ul id="nav">
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="covid.html">COVID-19</a></li>
+        <li><a href="home-nursing-services.html">Home Nursing Services </a>
+            <ul>
+                <li><a href="industrial-nursing-services.html">Industrial Nursing Services</a></li>
+                <li><a href="baby-care-nursing.html">Baby Care Nursing</a></li>
+                <li><a href="jobs.html">Jobs »</a>
+                    <ul>
+                        <li><a href="jobsinhala.html">JobsSinhala</a>
+                            <li><a href="jobtamil.html">jobsTamil</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+            <li><a href="elders.html">Elders Home</a></li>
+			<li><a href="ambulance.html">Ambulance</a></li>
+			<li><a href="medicalequipment.html">Medical Equipment</a></li>
+	       <li><a href="index.html">Contact Us </a>
+            <ul>
+<li><a href="viewAll.php">Patients</a></li>
+                <li><a href="membership.html">Membership</a></li><ul>
+    </ul>   </ul>   </ul>    
+
+
+
+
+<div class="blockquote">
+                            
+                                    <h1> <center>AMBULANCE SERVICE </center> </h1>
+                            
+                                <p style="text-align:justify"> <center> First Time in Sri Lanka Air Suspension Government Approved Ambulance Service.</center> </p>
+                                 <p style="text-align:justify"> <center>  Ministry of Health Registered No. PHSRC/AS/021 </center></p>
+                          
+</div>
+
+
+   <div id="gallery">
+  
+   <img src="amb1.jpg">
+   <img src="amb2.jpg">
+   <img src="amb3.jpg">
+   <img src="amb4.jpg">
+   <img src="amb5.jpg">
+   <img src="amb6.jpg">
+
+<div> 
+
+
+
+
+
+
+
+
+
+
+<h2><center>Royal Nursing Home provides you with a prompt, high quality Emergency Ambulance Service.
+<br>Ambulance Service Helpline 011 2 80 40 40</center></h2>
+
+
+<br><br>
+<p><b>Royal Nursing Home (Pvt)Ltd. has the most number of ambulances owned by a private entity and all our ambulances are equipped with the latest technology. These ambulances have ICU facilities equipped with the cutting-edge life-saving equipment including defibrillators and mobile ventilators and our ambulance beds use shockproof Air Suspension technology that prevents any shaking and tossing, which in turn makes the journey to the hospital less stressful for the patient. We place great emphasis on the safety of the patient during transport and we are the only company that provides facilities that are compatible with international standards at a reasonable price.</b></p><br><br>
+
+<h2> NORMAL PATIENT TRANSPORT</h2>
+<p><b>Home to Hospital, Hospital to Home, Hospital to Hospital, Fully Equipped Ambulance, Qualified Emergency Medical Technicians ready to serve you.</b></p>
+
+
+<h3><center>Chargers ​</center></h3>
+<p><b>The fare starts from Rs6000/= for the first 10 Kilometers & Extra one Kilometers Rs.200/= only.</b></p>
+<p><b>​There will be no waiting charge for the first 30 minutes and a waiting charge of Rs. 1,000 will be charged for each additional 30 minutes of waiting.</b></p><br>
+
+
+<h2>COVID-19 PATIENTS TRANSPORT</h2>
+<p><b>Fully Equipped Ambulance with Portable Ventilators, Cardiac Monitors, Incubators, Syringe / Infusion Pumps, AED, Defibrillators , Qualified Paramedics accompanies with </b></p>
+<p><b>the Ambulance.</b></p>
+
+<h3><center>Chargers </center>​</h3>
+<p><b>The fare starts from Rs.8,000/= for the first 10 Kilometers & Extra one Kilometers Rs.200/= only.</b></p>
+<p>​<b>There will be no waiting charge for the first 30 minutes and a waiting charge of Rs. 1,000 will be charged for each additional 30 minutes of waiting.</b></p><br>
+
+
+<h2>CRITICAL CARE TRANSPORT</h2>
+<p><b>Fully Equipped Ambulance with Portable Ventilators, Cardiac Monitors, Incubators, Syringe / Infusion Pumps, AED, Defibrillators , ICU Medical Officers, </b></p>
+<p><b>Qualified Paramedics accompanies with the Ambulance.</b></p>
+
+<h3><center>Chargers ​</center></h3>
+<p><b>The fare starts from Rs25,000/= for the first 10 Kilometers & Extra one Kilometers Rs.300/= only.
+​There will be no waiting charge for the first 15 minutes and a waiting</b></p>  <p><b>charge of Rs. 2,000 will be charged for each additional 30 minutes of waiting.</b></p><br>
+
+
+<div id="table">
+<table align="center">
+  <tr>
+    <td> <img src="amb7.jpg"  width="100%" height="100%"> </td>
+    <td><img src="amb8.jpg" width="100%" height="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="amb9.jpg" width="100%" height="100%"></td>
+    <td><img src="amb10.jpg" width="100%" height="100%"></td>
+  </tr>
+
+</table>
+</div>
+
+<h1><center>Call Now     0718 320 320,    0711 600 600 </center></h1>
+​
+<p align="center">Sri Lanka to any other country, any other outside Sri lanka to Sri lanka, transfers arrange with Fully Qualified Medical Officers / Paramedic & all required Medical Equipments, Visas organized by ourselves.</p>
+
+
+
+
+
+</div></div></div></div>
+
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>ROYAL NURSING HOME <span>(PVT)LTD.</span></h3>
+
+				<h4 class="footer-links">
+					<a href="Home.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="covid.html">COVID-19</a>
+					·
+					<a href="home-nursing-services.html">Home Nursing Services</a>
+					·
+					<a href="elders.html">Elders Home</a>
+					·
+					<a href="ambulance.html">Ambulance</a>
+					·
+					<a href="medicalequipment.html">Medical Equipment</a>
+					·
+					
+					<a href="contactus.html">Contact Us</a>
+					
+					
+					
+				</h4>
+
+				<p class="footer-company-name"># 35 Devananda Road, Nawinna Maharagama</P>
+<p class="footer-company-name"> Care is just a phone call away   011 2 80 40 40</P>
+<p class="footer-company-name"> Copyright @ 2007 Royal Nursing Home(Pvt)Ltd. mail@royalnursinghome.com</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/royalnursing/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/royal_nursing"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/waruna-atapattu-36380a121/?originalSubdomain=lk"><i class="fa fa-linkedin"></i></a>
+					
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+			</div>
+			<div class="footer-right">
+<a href="payment.html"><img src="pic3.png" alt="Trulli"></a> 	</div>
+
+		</footer>
+	
+                 
+</body>
+</html>

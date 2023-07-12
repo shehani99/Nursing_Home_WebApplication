@@ -1,0 +1,1426 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+ 
+    
+    
+
+    
+    <!-- Icon Font Stylesheet -->
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>home-nursing-services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+ 
+
+body , h1,h2,h3,h4,h5,h6 {color:"black"; font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('myphoto.jpeg');
+  min-height: 60%;
+  
+}
+#nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background:DarkCyan;
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+            width: 188px;
+            /* this is the width of the menu items */
+            line-height: 40px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: gray;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+  margin-top: 7px;
+   color: white;
+}
+
+.menus {
+  float: left;
+  width: 18%;
+  height:82%;
+  margin-top: 10px;
+  padding: 0 10px;
+  background-color:	#f5f5dc;
+} 
+  
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color:	#ff7f50;
+  color: white;
+}
+
+.menuitem1 {
+  padding: 100px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color:	#483d8b;
+ 
+}
+
+.main {
+  float: left;
+  width: 60%;
+  height:82%;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color:	#C0C0C0;
+  color:#FFFF00;
+  margin: 50px;
+}
+
+
+.right {
+  background-color:#FFFF00;
+  float: left;
+  width: 20%;
+  padding: 10px 15px ;
+  margin-top: 7px;
+  margin: 10px 100px 90px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+
+}
+
+.rights {
+  background-color:#ff7f50;
+  float: left;
+  width: 20%;
+  padding: 10px 15px ;
+  margin-top: 7px;
+  margin: 10px 70px 15px  ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+
+.rightss {
+  background-color:	#00ced1;
+  float: left;
+  width: 20%;
+  padding: 10px 15px ;
+  margin-top: 7px;
+  margin: 10px 100px 10px ; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align: center;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.containersss{
+  width: 100%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 50px 50px 80px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.containersss .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.containerssss{
+  width: 50%;
+  height:10%;
+  background: url(istockphoto-1311934969-170667a.jpg);
+  align:center;
+  border-radius: 10px;
+  padding: 10px 60px 30px 40px;
+  box-shadow: 10px 10px 50px 30px rgba(0, 1, 4, 1) inset;
+  margin-left: 350px;
+  margin-right: 30px;
+}
+.containerssss .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+:root {
+    --primary: #FD5D14;
+    --secondary: #FDBE33;
+    --light: #F4F6F8;
+    --dark: #040F28;
+}
+
+.pt-6 {
+    padding-top: 90px;
+}
+
+.pb-6 {
+    padding-bottom: 90px;
+}
+
+.py-6 {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.btn {
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    bottom: -1px;
+    left: 50%;
+    background: var(--primary);
+    transition: .5s;
+}
+
+.btn.btn-primary::after {
+    background: var(--dark);
+}
+
+.btn:hover::after,
+.btn.active::after {
+    width: 50%;
+    left: 25%;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    left: 50%;
+    bottom: 0;
+    margin-left: -22px;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.bg-dark-radial {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+    background-size: 3px 3px;
+}
+
+.bg-light-radial {
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: -o-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+    background-size: 3px 3px;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(4, 15, 40, .7);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.page-header {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(4, 15, 40, .7), rgba(4, 15, 40, .7)), url(software-engineer-at-work-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.service-item .service-icon {
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.service-item .service-icon i {
+    transition: .2s;
+}
+
+.service-item:hover .service-icon i {
+    font-size: 60px;
+}
+
+.portfolio-item {
+    margin-bottom: 60px;
+}
+
+.portfolio-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    padding: 0 30px;
+    right: 30px;
+    left: 30px;
+    bottom: -60px;
+    background: #FFFFFF;
+    z-index: 3;
+}
+
+.portfolio-btn {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    font-size: 120px;
+    line-height: 0;
+    transition: .1s;
+    transition-delay: .3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+}
+
+.portfolio-box::before,
+.portfolio-box::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    transition: .5s;
+    z-index: 1;
+    background: rgba(4, 15, 40, .7);
+}
+
+.portfolio-box::before {
+    left: 0;
+}
+
+.portfolio-box::after {
+    right: 0;
+}
+
+.portfolio-item:hover .portfolio-box::before {
+    left: 0;
+    width: 50%;
+}
+
+.portfolio-item:hover .portfolio-box::after {
+    right: 0;
+    width: 50%;
+}
+
+@media (min-width: 992px) {
+    .testimonial,
+    .contact-form {
+        margin-left: -90px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer::after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 50%;
+        background: var(--primary)
+    }
+}
+
+
+
+h1{
+	 text-align: center;
+  text-justify: inter-word;
+  color:red;
+}
+h2{
+	 text-align: center;
+  text-justify: inter-word;
+  color:black;
+}
+h5{
+	 text-align: center;
+  text-justify: inter-word;
+  color:black;
+}
+h3{
+	 text-align: justify;
+  text-justify: inter-word;
+  color:red;
+}
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+.div1 {
+  width: 1000px;
+  height: 100px;
+text-align:center;
+  background-color:#AFEEEE;
+  margin:10px;
+  padding: 20px;
+}
+.div11 {
+  width: 1000px;
+  height: 100px;
+text-align:center;
+  background-color:PowderBlue;
+  margin:10px;
+  padding: 20px;
+}
+.div111 {
+  width: 1500px;
+  height: 350px;
+
+  background-color:PowderBlue;
+  margin:10px;
+  padding: 20px;
+  list-style-type: square;
+}
+
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color: #00CED1;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: PowderBlue;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  white;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+ul.a {
+  list-style-position: outside;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+
+</style></head>
+<body>
+<div>
+
+<!-- Sidebar with image -->
+
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)--><center>
+<img  src ="images.png" alt="Trulli" style="width:10%"><img  src ="21765282_214818732387609_7698533422210261908_n.jpg" alt="Trulli" style="width:20%"></center>
+<center> <br><br>
+<ul id="nav">
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="covid.html">COVID-19</a></li>
+        <li><a href="home-nursing-services.html">Home Nursing Services </a>
+            <ul>
+                <li><a href="industrial-nursing-services.html">Industrial Nursing Services</a></li>
+                <li><a href="baby-care-nursing.html">Baby Care Nursing</a></li>
+                <li><a href="jobs.html">Jobs »</a>
+                    <ul>
+                        <li><a href="jobsinhala.html">JobsSinhala</a>
+                            <li><a href="jobtamil.html">jobsTamil</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+            <li><a href="elders.html">Elders Home</a></li>
+			<li><a href="ambulance.html">Ambulance</a></li>
+			<li><a href="medicalequipment.html">Medical Equipment</a></li>
+	       <li><a href="index.html">Contact Us </a>
+            <ul>
+<li><a href="viewAll.php">Patients</a></li>
+                <li><a href="membership.html">Membership</a></li><ul>
+				
+				    </ul>   </ul>   </ul> <br><br>
+    
+<div class="w3-main w3-padding-large" style="background-color:#40E0D0;">
+
+<!-- Portfolio Start -->
+<div  style="background-color:#AFEEEE ">
+    <div class="container-fluid  py-6 px-5 ">
+        <div  style="max-width: 1300px;max-height: 3000px; ;padding-top: 10px;
+  ;padding-right: 30px;
+  ;padding-bottom: 50px;
+  ;padding-left: 80px">
+		<div>
+<h1 style="text-align:center">Home Nursing Services</h1>
+<h2 style="text-align:justify" >Royal Nursing Home, Sri Lanka's largest and most recognized Home nursing services provider, is dedicated to looking after your parents, patients, and baby at the comfort of your own home.</h2>
+<h4 style="text-align:justify">The need for home nursing service is uncertain, it does not come with a knock or warning. But, Royal Nursing Home is always alert on behalf of you; it stands a round of clock just to serve you with the best nursing care at home. Nursing care service distinctly is needed for elderly care, post-surgical care, and chronic illness disables care or cognitively impaired care. Hence, when in need of such assistance, you can rely on Royal Nursing Home because Royal Nursing Home aids you with the best intervention of Nursing care services in Colombo, Negombo and Matara, with the process of outstanding selection method Royal Nursing Home enrolls completely certified and verified nurses for the nursing home care service. Royal Nursing Home pioneer aim in providing home nursing service is to assert that the person can live in an independent environment in their own home with their beloved family members. Depending on the inclinations of the client Royal Nursing Home administrates nurses according to the necessity of the patient, expert and specialized nurses are assigned who thoroughly fits in the criteria in essence to serve the concerned person. Nursing service from Royal Nursing Home is not just available for the above-mentioned assistance but also for newborn baby care or any other kind of patient care you seek for.</h4>
+
+<h4 style="text-align:justify">Trained and Certified Care Nurses will bring Loved One Professional, Safe, Secure & Comfortable Care Nursing Service at Your Home. Now you are Relax to Perform well with your Duties & Responsibilities without thinking on Your Loved one when they Need Your Care & Attention. Exclusive Features of our Home Nursing Service: With the Request for a Care Nurse to be Placed at your Home, One of Our Care Professionals will Discuss and Visit you to Analyze the status of the Service Together with the Assessment of the Condition of Your Patient by our Care Nursing In-Change. Accordingly Care Nursing Plan and the Affordable Care Nursing Package will be Proposed for your Approval. The Following are the Exclusiveness of Our Care Nursing Service at your Home.</h4>
+
+<h3 style="text-align:justify"> Our skilled, trained and qualified staff provide state of the art nursing services at your doorstep. They are compassionate and empathetic towards the needs of our patients.</h3>
+
+</div> </div> </div> </div>
+	<br><br>
+<center>
+<video id="myVideo" width="500" height="300" controls autoplay>
+  <source src="Home Nursing Service.mp4" type="video/mp4">
+  <source src="Home Nursing Service.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</center>		
+	<br>
+	<center>
+<button style="background-color:#00FFFF" onclick="playVid()" type="button">Play Video</button>
+<button style="background-color:#00FFFF" onclick="pauseVid()" type="button">Pause Video</button></center><br> 			
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+  <div class="w3-text-black">
+    <h2 class="w3-text-black"><b>Our Promise</h2></b>
+      <hr style="background-color:black">
+    <h3  class="w3-text-red" style="text-align:center"><b>Royal Home Nursing Services at Home, every aspect of our service reflects the guiding principles behind our endeavours to nurture Convenience,Clinical Quality and Trust.</b></h3>
+    <div class="row g-5 portfolio-container">
+			
+			 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="IMG_3158_d600 (1).jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"> </p>
+                        <span class="text-body"></span>
+                    </a>
+                    <a class="portfolio-btn" href="IMG_3158_d600 (1).jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+			 <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="IMG_3102_d600.jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"> </p>
+                        <span class="text-body"></span>
+                    </a>
+                    <a class="portfolio-btn" href="IMG_3102_d600.jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+			
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="IMG_3116_d600.jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"> </p>
+                        <span class="text-body"></span>
+                    </a>
+                    <a class="portfolio-btn" href="IMG_3116_d600.jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="011 (1).jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"><b>Convenience</p></b>
+                        <span class="text-body" style="text-align:justify">We bring superior health care within the comfort of your home, curated according to your needs and delivered whenever you choose. Call us anytime, we are accessible 24x7 to tend to all your medical needs.</span>
+                    </a>
+                    <a class="portfolio-btn" href="011 (1).jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="page-1_img04.jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"><b>Clinical Quality</p></b>
+                        <span class="text-body" style="text-align:justify">We provide care plans curated in accordance with world class standard operating procedures by highly experienced clinicians and specialists. Our team is extensively trained and certified to ensure that our patients get the best service.</span>
+                    </a>
+                    <a class="portfolio-btn" href="page-1_img04.jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
+                <div class="position-relative portfolio-box">
+                    <img class="img-fluid w-100" src="DSC_0397 (1).jpg" alt="">
+                    
+                        <p class="h4 text-uppercase"><b>Trust</p></b>
+                        <span  style="text-align: justify;">Consistency and reliability are the hallmarks of the Royal Nursing Home. With over 1million customers, it is known to deliver on its promise at all times. We keep you involved at every step to maintain utmost transparency.</span>
+                    </a>
+                    <a class="portfolio-btn" href="DSC_0397 (1).jpg" data-lightbox="portfolio">
+                        <i class="bi bi-plus text-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   <br>
+   
+   <h1 style="text-align:center">HOME NURSING CHARGES</h1>
+   <h3 style="text-align:center;color:black">Your loved one deserves the best. Our trained Care Professionals are here to deliver personalised and dedicated care to your loved ones in the comfort of their homes.</h3>
+    <!-- End Grid/Pricing tables -->
+	<center>
+	<div class="div1">24 Hours Shift  ( 8.00 a.m to 8.00 a.m )<br>
+    Charges from Rs. 2,950/= US$11 upwards to provide a full day of care for your <br>beloved parents, the sick and infants.</div>
+    
+	
+	<div class="div11">Charges may vary depending on the practices that the nurse must perform and <br>level of care that needs to be given.</div>
+    </div></center>
+	<center>
+	<h3 style="text-align:center;color:black">​Get your free care consultation<br>
+Make Home Care Personal To Your Loved One
+</h3>
+	<h3 style="text-align:center;color:SteelBlue"><b>It is mandatory that the service be obtained for a minimum period of 7 days.
+</h3></b>
+<h3 style="text-align:center;color:black">​Before the commencement of the service, it is mandatory that at least the payment for 7 days be made.<br> 
+Under the Covid-19 Guidelines of Health Ministry
+</h3></center><br>
+	<h3 style="color:black">​<b>&nbsp&nbsp&nbsp Why should you choose us above other Home Nursing firms?</b>
+</h3>
+<div class="div111"> <ul class="a"><li>We are a BOI approved company with 14 years of experience in the field. We are a two thousand- million-rupee company with over 500 trained medical staff.
+<li>We are approved (PHSRC/OMI/235, PHSRC/AS/21) with the Private Health Regulatory Council (PHSRC), an institution attached to the Health Ministry..</li>
+<li>We have a dedicated staff comprising of doctors, matrons, nursing sisters and senior nurses who work around the clock.</li>
+<li>We have mobile service units, in Colombo, to facilitate the needs of patients and to monitor them..</li>
+<li>Twice a month the chief nursing matron will arrive to inspect the patient..</li>
+<li>Nursing services like Nasogastric Tube Change, the Catheter Change, the Blood Pressure Test and the Blood Sugar Test are done free of charge..</li>
+<li>We are the private company with the largest fleet of ambulances in Sri Lanka and priority is given to our customers under a concessionary rate.</li>
+<li>There are over 400 male and female nurses dedicated to providing a consistent service that is tailor made to suit our clients. They are all uniformed and trained to meet best professional practices..</li>
+<li>Partner hospitals like Lanka hospital, King hospital, Durdans and Hemas offer attractive offers when using their services.</li>
+<li>We do not charge registration fees, membership fees and etc and we don’t have any hidden charges.​.</li>
+<li>Adult diapers and other medical equipment needed for the patients will be provided at a reasonable rate..</li>
+<li>You can pay us through cheque, credit card, QR codes, online and through bank transfers..</li>
+<li>Free medical advice will be given by the institution’s Resident medical doctor.</li>​</div></div>
+   
+	<br>
+	<h3 style="text-align:center;color:black"><b>​Our Nurse Aides are specially trained on the following procedures</b></h3>
+	<br>
+	
+<div class="rows">
+  <div class="columns">
+    <div class="card">
+     
+      <div style="background-color:DarkTurquoise" class="container">
+        <h2 style="text-align:left"><b>Feeding</b></h2>
+       
+        <p>Oral Feeding,<br>
+Nasogastric Feeding,<br>
+Gastronomy  Feeding,<br>
+Monitor I. V. Infusion</p>
+      
+     
+      </div>
+    </div>
+  </div>
+  
+  
+  	
+<div class="rows">
+  <div class="columns">
+    <div class="card">
+     
+      <div style="background-color:DarkTurquoise" class="container">
+        <h2 style="text-align:left"><b>Vigilant Observations</b></h2>
+       
+        <p>Blood Pressure,<br>
+Temperature, <br>
+Pulse,<br>
+Respiration,<br>
+
+</p>
+      
+     
+      </div>
+    </div>
+  </div>
+  
+  	
+<div class="rows">
+  <div class="columns">
+    <div class="card">
+     
+      <div style="background-color:DarkTurquoise" class="container">
+        <h2 style="text-align:left"><b>Administration of</b></h2>
+       
+        <p>
+Our Nurse Aides are specially trained on the following procedures<br>
+Oral Medications<br>
+Insulin Injections<br>
+Intra Muscular Injections</p>
+      
+     
+      </div>
+    </div>
+  </div>
+  
+  
+  	
+<div class="rows">
+  <div class="columns">
+    <div class="card">
+     
+      <div style="background-color:DarkTurquoise" class="container">
+        <h2 style="text-align:left"><b>MAINTAIN PERSONAL HYGIENE</b></h2>
+       
+        <p>Bed Baths<br>
+Shower Baths<br>
+Dressing of Wounds<br>
+Colostomy Care<br>
+Catheter Care etc..</p>
+      
+     
+      </div>
+    </div>
+  </div>
+  
+  	
+<div class="rows">
+  <div class="columns">
+    <div class="card">
+     
+      <div style="background-color:DarkTurquoise" class="container">
+        <h2 style="text-align:left"><b>PREVENTION OF COMPLICATIONS LIKE
+</b></h2>
+       
+        <p>Bed Sores<br>
+Hypostatic Pneumonia<br>
+Diabetic Gangrene<br>
+Dehydration and Constipation<br>
+Accidental Falls and Fractures</p>
+      
+     
+      </div>
+    </div>
+  </div>
+
+     
+      <div class="container">
+        <h2 style="text-align:left"><b>
+</b></h2>
+       
+        <p><br>
+		<br>
+		<br>
+		<br><br>
+		<br><br>
+		<br>
+		<br>
+		</p>
+      
+     
+      </div>
+    </div>
+  </div>
+  
+	</div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><br>
+	<h3 style="text-align:center;color:red"><b>​Government Approved Home Care Nursing Service & Ambulance Service Ministry of Health Sri Lanka PHSRC/OMI/235, PHSRC/AS/021</b></h3>
+	<br>
+	<h3 style="text-align:center;color:black"><b>Since 2007 we have been operating as one of Sri Lanka’s leading institutes providing home nursing<br> services. Delivering excellence continuously for the last 14 years, the company has an asset base of three<br> thousand million rupees. However, we proudly boast that our most valuable resource is our 600 strong,<br> professional staff who provide a dedicated service to all our clients.</b></h3>
+	<br>
+	<h3 style="text-align:center;color:black"><b>2007 වර්ෂයේ සිට වසර 14 පුරා ශ්‍රී ලංකාවේ විශිෂ්ටතම හා ප්‍රමුඛම හෙද සේවා ආයතනය වශයෙන් රුපියල් මිලියන තුන් දහසක වත්කම් <br>සහිත අප ආයතනයට ඇති වටිනාම සම්පත වෘත්තීය දක්ෂතාවයන් කැපවී සේවය කරන 600 කින් සමන්විත කාර්ය මණ්ඩලය බව <br>නිහතමානි ආඩම්බරයකින් දැනුම් දෙමු.</b></h3>
+	
+	<br>
+	<h3 style="text-align:center;color:black"><b>2007 ஆம் ஆண்முதல் 14 ஆண்டுகளாக இலங்கையில் மிகச் சிறந்த மற்றும் முன்னணி<br> தாதிச் சேவை நிறுவனமாக, மூன்று பில்லியன் ரூபாவிற்கும் அதிகமான சொத்துக்களைக் <br>கொண்ட எங்களது மிக பெறுமதிமிக்க வளமானது, 600 பேரைக் கொண்ட தொழில்சார் <br>திறன்கொண்ட, அர்ப்பணிப்புமிக்க பணியாள்தொகுதியினரேயாவர் என்பதைத் தாழ்மையுடன் தெரிவித்துக் கொள்வதில் பெருமிதமடைகின்றோம்.</b></h3>
+	
+	<br>
+	<center>
+<img src="Screenshot 2022-03-10 221922.jpg" alt="Trulli"> 	</center>
+	<br><br>
+      <div class="w3-row w3-center w3-padding-16 w3-section" style="background-color:#20B2AA">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">14+</span><br>
+        Years of Experience
+      </div>
+      
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">621+</span><br>
+        Employees
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">389+</span><br>
+        24 Hours Duty
+      </div>
+	  <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">9810+</span><br>
+        Happy Clients
+      </div>
+  <!-- End About Section -->
+  </div>
+            </div></div></div>
+			
+			
+  
+<br>  
+<br>
+  <!-- Footer -->
+				
+				
+ 
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>ROYAL NURSING HOME <span>(PVT)LTD.</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="covid.html">COVID-19</a>
+					·
+					<a href="home-nursing-services.html">Home Nursing Services</a>
+					·
+					<a href="elders.html">Elders Home</a>
+					·
+					<a href="ambulance.html">Ambulance</a>
+					·
+					<a href="medicalequipment.html">Medical Equipment</a>
+					·
+					
+					<a href="contactus.html">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name"># 35 Devananda Road, Nawinna Maharagama</P>
+<p class="footer-company-name"> Care is just a phone call away   011 2 80 40 40</P>
+<p class="footer-company-name"> Copyright @ 2007 Royal Nursing Home(Pvt)Ltd. mail@royalnursinghome.com</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/royalnursing/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/royal_nursing"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/waruna-atapattu-36380a121/?originalSubdomain=lk"><i class="fa fa-linkedin"></i></a>
+					
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+			</div>
+			<div class="footer-right">
+<a href="payment.html"><img src="pay_online_button_d200.png" alt="Trulli"></a> 	</div>
+
+		</footer>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

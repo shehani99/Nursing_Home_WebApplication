@@ -1,0 +1,853 @@
+<html>
+<head><title>Elders home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.body{ margin:0 auto; width:1050px; padding: 10px; }
+
+.pic{
+background : url(patient4.jpg) no-repeat;
+position: relative;
+background-size: cover;
+
+}
+
+.topic{ height:400px; font-size:80px; font-weight:80px; text-align:center; color:#ff6666; }
+
+.subtopic1{
+font-size:30px; 
+font-weight:30px; 
+text-align:center;
+}
+
+.row1{ width:1050px; margin:0 auto;}
+
+.text11{width:200px; float:left; margin:5px;}
+
+.text1{width:800px; float:left; margin:5px;}
+
+row{ width:1050px; margin:0 auto;}
+
+.text21{width:200px; float:left; margin:5px;}
+
+.text2{width:800px; float:left; margin:5px;}
+
+.row3{ width:1050px; margin:0 auto;}
+
+.text31{width:200px; float:left; margin:5px;}
+
+.text3{width:800px; float:left; margin:5px;}
+
+.row4{ width:1050px; margin:0 auto;}
+
+.text41{width:200px; float:left; margin:5px;}
+
+.text4{width:800px; float:left; margin:5px;}
+
+.row5{ width:1050px; margin:0 auto;}
+
+.text51{width:200px; float:left; margin:5px;}
+
+.text5{width:800px; float:left; margin:5px;}
+
+.para1{
+
+
+font-size:20px; 
+font-weight:30px; 
+text-align:center;
+color:9933ff;
+}
+
+.para2{
+
+
+font-size:20px; 
+font-weight:30px; 
+text-align:center;
+
+}
+
+.para3{
+
+font-size:20px; 
+font-weight:30px; 
+text-align:center;
+color:red;
+}
+
+.subtopic2{
+font-size:20px; 
+font-weight:30px; 
+color:blue;
+}
+
+.hr1{background-color:#e0ebeb;}
+
+.hr2{background-color:#b3cccc;}
+
+.hr3{background-color:#b3f0ff;}
+
+.hr4{background-color:#ccccff;}
+
+.hr5{background-color:#c6ffb3;}
+
+
+.picrow1{ width:1050px; margin:0 auto;}
+
+.pic1{width:333.3px; float:left; margin:8px;}
+
+.pic2{width:333.3px; float:left; margin:8px;}
+
+.pic3{width:333.3px; float:left; margin:8px;}
+
+
+.picrow2{ width:1050px; margin:0 auto;}
+
+.pic4{width:500px; float:left; margin:8px;}
+
+.pic5{width:500px; float:left; margin:8px;}
+
+
+.picrow6{ width:1050px; margin:0 auto;}
+
+.pic6{width:333.3px; float:left; margin:8px;}
+
+.pic7{width:333.3px; float:left; margin:8px;}
+
+.pic8{width:333.3px; float:left; margin:8px;}
+
+
+
+#nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: DarkCyan;
+           
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding-top: 3px;
+            text-decoration: none;
+            width: 189px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 85%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: gray;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 500px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: DarkCyan;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 70%; 
+   border-style: solid;
+  border-color: #20B2AA;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  top: 250px;
+  left: 10px;
+  width: 200vh;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border-radius: 50px;
+  
+}
+
+.img2 { background-image: url('IMG_2949_d1000.jpg'); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color:	floralwhite;
+  font-weight: bold;
+  font-size: 40px;
+  border: 10px solid DarkCyan;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 900px;
+  height:200px;
+  padding: 20px ;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  color: 	dimgrey;
+}
+.center1 {
+  text-align: center;
+  color: 	black;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: PowderBlue;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  white;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+</style>
+</head>
+<body>
+<center>
+<img  src ="images.png" alt="Trulli" style="width:10%"><img  src ="21765282_214818732387609_7698533422210261908_n.jpg" alt="Trulli" style="width:20%"></center>
+<br><br>
+<ul id="nav">
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="covid.html">COVID-19</a></li>
+        <li><a href="home-nursing-services.html">Home Nursing Services </a>
+            <ul>
+                <li><a href="industrial-nursing-services.html">Industrial Nursing Services</a></li>
+                <li><a href="baby-care-nursing.html">Baby Care Nursing</a></li>
+                <li><a href="jobs.html">Jobs »</a>
+                    <ul>
+                        <li><a href="jobsinhala.html">JobsSinhala</a>
+                            <li><a href="jobtamil.html">jobsTamil</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+           <li><a href="elders.html">Elders Home</a></li>
+			<li><a href="ambulance.html">Ambulance</a></li>
+			<li><a href="medicalequipment.html">Medical Equipment</a></li>
+	       <li><a href="index.html">Contact Us </a>
+            <ul>
+<li><a href="viewAll.php">Patients</a></li>
+                <li><a href="membership.html">Membership</a></li><ul>
+    </ul>   </ul>   </ul>   
+
+      
+    
+	
+<br><br><br>
+
+<div class="body">
+<div class="pic">
+
+<div class ="topic">Luxury Elders Home</div>
+</div>
+
+<div class ="subtopic1">RETIREMENT LIVING OF NEW GENERATION</div>
+
+<p style="text-align:justify">Royal Nursing Home Offers High Quality Senior Citizens Care Services in Non Institutional Family like Environment 
+this Home is Successful in Meeting the Personal & Emotional Care Needs of Residents to Give them Support in their 
+Daily Activities. People Enter Nursing Homes for a Variety of Reasons. Some may Enter for a Brief Time when they 
+Leave the Hospital Because they Need Sub-Acute Care, Such as Skilled Nursing Care, Medical Services, & Therapies. 
+Others, However, Need Long-Term Care (LTC). LTC is Generally Defined as a Broad Range of Personal, Social, & Medical 
+Services that Assist People who Have Functional or Cognitive limitations in their Ability to Perform Self-Care & 
+other Activities Necessary to Live Independently. With Changing Life Styles & Busy Time Schedules Increasing Numbers 
+of Families are Concerned of their inability to Provide Proper Care for their Elderly Parents. Residents would be 
+Long Term, Accommodation is Limited for a Selected Community of People - the Criteria Being, those who would Benefit 
+from the Facilities Offered & who Appreciate the Natural Environment.</p>
+
+<b style="text-align:justify">At Royal Nursing Home, our elderly residents move in to stay with us for life. We understand that leaving your 
+own home is never an easy decision therefore we try our best to provide our services in a ‘home like’ environment.</b>
+
+<p style="text-align:justify">Skilled Nursing </br> Royal Nursing Home Prides itself on Offering the Extras that Help the Recuperating Person 
+Return Home, and the Full-Time resident feel at home. Our Full-Service Skilled Nursing Care wing Offers 24-Hour 
+Government Registered Nurses (RN), Quality CNA Staff, Full therapies, activities, and Social & Dietary Services 
+to Meet your Needs. The Skilled Nursing Wing is Sri Lankan Medical Council Approved.</p>
+
+<p style="text-align:justify">The Small Size of our Facility Allows for Personal Contact with our Friendly & Helpful Staff. Our Activities 
+Staff Keeps you Challenged & Active, & Our Dietary Staff Provides Regular and Special Diets that are Nutritious 
+and Tasty </p>
+
+<div class="row1">
+<div class="text11"><b>Services</b></div>
+<div class="text1" style="text-align:justify">
+As leaders in Skilled Nursing and Rehabilitation, Royal Nursing Home is Committed to Providing the Highest Standard 
+of Care and Comfort for all of its Residents, while Creating an Atmosphere that Respects the Individual. Recognizing 
+that each Person is Unique, Royal Nursing Home Designs a Care plan to Address the Specific Needs of Those Entrusted 
+to its Care, Enhancing their Quality of Life and Well-Being.
+</div>
+</div>
+
+<div class="row2">
+<div class="text21"><hr><b>Nursing</b></div>
+<div class="text2" style="text-align:justify">
+Royal Nursing Home Nurses are Knowledgeable, Skilled, Dedicated and Sensitive Professionals. As Licensed and 
+Accredited Nursing Home, Royal Nursing Home Employs Registered Nurses, Licensed Practical or Vocational Nurses 
+and Certified Nursing Assistants.</div>
+</div>
+
+<div class="row3">
+<div class="text31"><hr><b>Recreational Activities</b></div>
+<div class="text3" style="text-align:justify">
+Royal Nursing Home Offers a Unique Approach to Social and Recreational Activities. An Activities Director Designs 
+Daily Activities that Promote Social and Physical Interaction, Communication and Fond Memories. Royal Nursing Home 
+Provides Residents with Transportation on Outings and Luncheons. Monthly Resident Council Meetings afford the 
+Opportunity for Self-expression Regarding their Day-to-Day Happenings.</div>
+</div>
+
+<div class="row4">
+<div class="text41"><hr><b>Rihabilitation</b></div>
+<div class="text4" style="text-align:justify">
+Royal Nursing Home Rehabilitation includes Physical, Speech and Occupational Therapy Provided by the Most 
+Qualified and Accredited Personnel in the Profession.</div>
+</div>
+
+<div class="row5">
+<div class="text51"><b>Nutrition</b></div>
+<div class="text5" style="text-align:justify">
+Meals are Prepared Fresh Daily by Royal Nursing Home On-Site Dietary Department. Meals are Presented in an 
+Appetizing Manner and are Scheduled and Supervised by a Registered Dietitian. Special Diets are Also Available. </div>
+</div>
+
+<div class="para1">
+<p>RETIREMENT HOME ROOMS & BED CHARGES</p></div>
+
+<div class="para2"><p style="text-align:justify">FAIR & TRANSPARENT HOMECARE PRICING WITH NO HIDDEN COSTS</p></div>
+
+<div class="para3"><p style="text-align:justify">Elders are Expected to be Long Term & they will be Charged Monthly.
+No Admission Chargers No Deposit Charges No Hidden Charges</p></div>
+
+<div class="subtopic2">Ward Bed</div>
+<div class="hr1"><hr><h3>Ward Bed ( Rs.70,000/=) US$ 265 Per Month</h3>
+Ward Bed Share Bathroom Standard Facilities with Meal ( Full Board ) Including 24 Hour General Nursing 
+Services & Resident Doctor Fees & Laundry Service Free<hr></div>
+
+<div class="hr2"><hr><h3>HCU ( High Care Unit) ( Rs.75,000/=) US$ 280 Per Month</h3>
+HCU (High Care Unit) Air Conditioner Ward Bed Share Bathroom Standard Facilities with Meal ( Full Board ) 
+Including 24 Hour General Nursing Services & Resident Doctor Fees & Laundry Service Free<hr></div>
+
+<div class="subtopic2">Individual Room</div>
+<div class="hr3"><hr><h3>Classic Package ( Rs.75,000/=) US$ 280 Per Month</h3>
+Individual Room Share Bathroom Standard Facilities with Meal ( Full Board ) Including 24 Hour General Nursing 
+Services & Resident Doctor Fees & Laundry Service Free<hr></div>
+
+<div class="hr4"><hr><h3>Gold Package ( Rs.115,000/=) US$ 435 Per Month​</h3>
+Individual A/C Luxury Room Standard Facilities with Meal ( Full Board ) Including 24 Hour General Nursing 
+Services & Resident Doctor Fees & Laundry Service Free<hr></div>
+
+<div class="hr5"><hr><h3>Premier Package ( Rs.140,000/=) US$ 525 Per Month</h3>
+Individual Lage A/C Luxury Room Standard Facilities with Meal ( Full Board ) Including 24 Hour General Nursing 
+Services & Resident Doctor Fees & Laundry Service, Transport 40km Per Month Free<hr></div>
+
+<div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="pic11.jpg" style="width:25%">
+        <img src="pic22.jpg" style="width:22.5%">
+        <img src="pic33.jpg" style="width:25%">
+		<img src="bus.jpg" style="width:22%">        
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="hall.jpg" style="width:23%">       
+		<img src="pic44.jpg" style="width:23%"> 
+		<img src="pic55.jpg" style="width:23%">
+		<img src="pic66.jpg" style="width:23%">
+
+
+</div>
+
+</div>
+
+
+
+<h3>Luxury Retirement Home Senior Care‘s Core Values:</h3>
+<p style="text-align:justify">At Royal Nursing Home, we are committed to these nine core values that does not only define who we are, but 
+also serves as guideline to help us become the home company we would like to be. We seek to touch lives of others 
+every day following these core values.</p>
+
+<p style="text-align:justify"><b>Passion</b> – Passion is the motivation that drives our company forward. We believe in having a positive 
+and cheerful attitude about everything we do because we recognize this inspires others to have same attitude.</p>
+
+<p style="text-align:justify"><b>Excellence</b> – We will set forward our personal and professional best to bring superior home care services for 
+all of our seniors, sensing their needs, and going beyond their expectations.</p>
+
+<p style="text-align:justify"><b>Accountability</b> – We strongly believe that we are accountable for providing the ultimate quality of professional 
+care to our seniors and their families.</p>
+
+<p style="text-align:justify"><b>Customer-Driven Satisfaction</b> – Satisfied customers are essential to our success. When Dearest Home 
+does business, our staff looks at the world through the eyes of the seniors and their loved ones to gain ideas 
+about what the seniors and their loved ones want and desire. We strive to provide the highest level of 
+professional care.</p>
+
+<p style="text-align:justify"><b>Engage In Conversation</b> – As the company grows, engaging in conversations becomes more and more 
+significant because everyone needs to interpret how the team achieves the overall goals of our company. 
+It’s essential in this company that we all have effective, open, and honest communications with our Seniors, 
+employees, and the community around us.
+</p>
+
+<p style="text-align:justify"><b>Quality</b> – We strive for continuous quality improvement in all that we do so that we will achieve 
+excellence in the home care industry.</p>
+
+<p style="text-align:justify"><b>Respect</b> – We must treat and trust our seniors, employees, or anyone around you with the ultimate 
+respect at all time.</p>
+
+<p style="text-align:justify"> <b>Teamwork</b> – We rely on one another and believe that by working together as a team through participation 
+and teamwork, we are able to reach our potential and provide superior senior care.</p>
+
+<p style="text-align:justify"><b>Enthusiasm</b> – We want our company to be known as a fun environment in which to work because we believe that a 
+positive and enthusiastic company will work smarter and accomplish more for our seniors and their loved ones.</p>
+
+</div>
+
+
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>ROYAL NURSING HOME <span>(PVT)LTD.</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="covid.html">COVID-19</a>
+					·
+					<a href="home-nursing-services.html">Home Nursing Services</a>
+					·
+					<a href="elders.html">Elders Home</a>
+					·
+					<a href="ambulance.html">Ambulance</a>
+					·
+					<a href="medicalequipment.html">Medical Equipment</a>
+					·
+					
+					<a href="contactus.html">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name"># 35 Devananda Road, Nawinna Maharagama</P>
+<p class="footer-company-name"> Care is just a phone call away   011 2 80 40 40</P>
+<p class="footer-company-name"> Copyright @ 2007 Royal Nursing Home(Pvt)Ltd. mail@royalnursinghome.com</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/royalnursing/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/royal_nursing"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/waruna-atapattu-36380a121/?originalSubdomain=lk"><i class="fa fa-linkedin"></i></a>
+					
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+			</div>
+			<div class="footer-right">
+<a href="payment.html"><img src="pay_online_button_d200.png" alt="Trulli"></a> 	</div>
+
+		</footer>
+
+</body>
+</html>

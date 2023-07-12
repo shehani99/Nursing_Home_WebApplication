@@ -1,0 +1,649 @@
+<html>
+<head><title>covid-19</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.body{ margin:0 auto; width:1050px; padding: 10px; }
+
+.topic{ height:70px; width:678px; font-size:25px; font-weight:50px; text-align:center; }
+
+.row{ width:75%; margin:0 auto; }
+
+
+.div1{ width:30%; float:left; margin:7.5%; }
+
+.div2{ width:30%; float:left; margin:7.5%; }
+
+.ctopic{ font-size:80px; font-weight:50px; text-align:center; }
+
+p span{ font-size:30px; }
+
+.caption{ font-size:20px; color:#737373; }
+
+.subtopic{ color:red; text-align:center; font-weight:50px; font-size:30px; }
+
+.subtopic2{ color:blue; text-align:center; font-size:20px; }
+
+.img2{ background: url(nurse3.jpg) no-repeat; position:relative; background-size:cover; }
+
+.cost{ font-weight:50px; text-align:center; font-size:20px; }
+
+.call{ font-weight:50px; text-align:center; font-size:20px; }
+
+.links{ width:1050px; margin:0 auto;}
+
+.pic1{width:333.3px; float:left; margin:8px;}
+
+.pic2{width:333.3px; float:left; margin:8px;}
+
+.pic3{width:333.3px; float:left; margin:8px;}
+
+
+
+#nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: DarkCyan;
+           
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding-top: 3px;
+            text-decoration: none;
+            width: 189px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 85%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background: gray;
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 500px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: DarkCyan;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* Full height */
+  height: 70%; 
+   border-style: solid;
+  border-color: #20B2AA;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  top: 250px;
+  left: 10px;
+  width: 200vh;
+  height: 70vh;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border-radius: 50px;
+  
+}
+
+.img2 { background-image: url('IMG_2949_d1000.jpg'); }
+
+
+/* Position text in the middle of the page/image */
+.bg-text {
+background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color:	floralwhite;
+  font-weight: bold;
+  font-size: 40px;
+  border: 10px solid DarkCyan;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 900px;
+  height:200px;
+  padding: 20px ;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  color: 	dimgrey;
+}
+.center1 {
+  text-align: center;
+  color: 	black;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed{
+	background: PowderBlue;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  black;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: black;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  white;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
+</style>
+</head>
+<body>
+<center>
+<img  src ="images.png" alt="Trulli" style="width:10%"><img  src ="21765282_214818732387609_7698533422210261908_n.jpg" alt="Trulli" style="width:20%"></center>
+<br><br>
+<ul id="nav">
+        <li><a href="Home.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="covid.html">COVID-19</a></li>
+        <li><a href="home-nursing-services.html">Home Nursing Services </a>
+            <ul>
+                <li><a href="industrial-nursing-services.html">Industrial Nursing Services</a></li>
+                <li><a href="baby-care-nursing.html">Baby Care Nursing</a></li>
+                <li><a href="jobs.html">Jobs »</a>
+                    <ul>
+                        <li><a href="jobsinhala.html">JobsSinhala</a>
+                            <li><a href="jobtamil.html">jobsTamil</a>
+                    </ul>
+                    </li>
+            </ul>
+            </li>
+            <li><a href="elders.html">Elders Home</a></li>
+			<li><a href="ambulance.html">Ambulance</a></li>
+			<li><a href="medicalequipment.html">Medical Equipment</a></li>
+	       <li><a href="index.html">Contact Us </a>
+            <ul>
+<li><a href="viewAll.php">Patients</a></li>
+                <li><a href="membership.html">Membership</a></li><ul>
+    </ul>   </ul>   </ul>   
+
+      
+    
+	
+<br><br><br>
+
+<div class="body">
+<div class="ctopic">C<span>O</span>VID-<span>19</span>
+<div class="caption">CORONAVIRUS</div>
+</div>
+<div class="img2">
+<div class="subtopic"><h2>COVID-19 CARING SERVICES</h2></div>
+<div class="subtopic2"><h3> We are ready to serve your loving parents who are being treated for COVID-19 at home or in a hospital.</h3></div>  
+<p><b><h3> Facilities and privileges</h3></b></p>
+<ol><b>
+<li>24 Hours caregiver fixed concessionary fee for 10 days</li>
+<li>Complete COVID-19 protective clothing and accessories will be providing by 
+the institution to the attending caregiver in accordance with WHO guidelines.</li>
+<li>24-Hour hospitalization ambulance service for emergencies at discounted rates as required.</li>
+<li>Doctor video consulttation</li>
+<li>Twice a day remote monitorining of vitals by nurse </li>
+<li>Ten days after the end of the service of the caregiver, they will be quarantined, and the expences will be 
+borne by the institution as well as the necessary treatement needed if 
+the nurse is diagnosed with COVID-19. The client is not responsible for those activities. </li>
+<li>Oxygen Cylinder is available at a discounted rate as required.</li></b>
+</ol>
+<p>Caregiver who have ample experience dealing with COVID-19, who have also 
+received both vaccination shots or have been diagnosed with the disease and been 
+completely cured are now available to take care of your parents and senior 
+citizens whether they are receiving treatment form home because they do not have any other 
+chronic illness or whether they are hospitalised because they require special attention.</p>
+<div class="cost"><b>The cost of caring for a COVID patient for a period of 10 days is RS. 80,000/=</b></div>
+</br></br></br></br></br></br></br></br></br></br></br>
+<div class="call"><p><b>For enquiries, call: <span>0715236320</span> or visit www.royalnursinghome.com/covid</b></p></div>
+</div>
+<div class="links">
+<a href="home-nursing-services.html"><div class="pic1">Home Nursing Service <img src="patient3.jpg" alt="patient3" height="150" width="333.3"></a></div>
+<a href="ambulance.html"><div class="pic2">Ambulance Services <img src="ambu1.jpg" alt="ambu1" height="150" width="333.3"></a></div>
+<a href="industrial-nursing-services.html"><div class="pic3">Industrial Nursing Service <img src="nurse6.jpg" alt="nurse3" height="150" width="333.3"></a></div>
+</div>
+</div>
+
+
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>ROYAL NURSING HOME <span>(PVT)LTD.</span></h3>
+
+				<p class="footer-links">
+					<a href="Home.html">Home</a>
+					·
+					<a href="about.html">About</a>
+					·
+					<a href="covid.html">COVID-19</a>
+					·
+					<a href="home-nursing-services.html">Home Nursing Services</a>
+					·
+					<a href="">Elders Home</a>
+					·
+					<a href="ambulance.html">Ambulance</a>
+					·
+					<a href="medicalequipment.html">Medical Equipment</a>
+					·
+					
+					<a href="contactus.html">Contact Us</a>
+				</p>
+
+				<p class="footer-company-name"># 35 Devananda Road, Nawinna Maharagama</P>
+<p class="footer-company-name"> Care is just a phone call away   011 2 80 40 40</P>
+<p class="footer-company-name"> Copyright @ 2007 Royal Nursing Home(Pvt)Ltd. mail@royalnursinghome.com</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/royalnursing/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/royal_nursing"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/waruna-atapattu-36380a121/?originalSubdomain=lk"><i class="fa fa-linkedin"></i></a>
+					
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+			</div>
+			<div class="footer-right">
+<a href="payment.html"><img src="pay_online_button_d200.png" alt="Trulli"></a> 	</div>
+
+		</footer>
+</body>
+</html>
